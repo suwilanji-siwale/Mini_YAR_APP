@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#032263</color>
+    <color name="colorPrimaryDark">#031231</color>
+    <color name="menu_white">#ffffff</color>
+    <color name="colorAccent">#FF4081</color>
+    <!--<color name="colorAccent">#b7b7b7</color>-->
+    <color name="wanted">#c92410</color>
+
+    <color name="sunColorTab">#111111</color>
+    <color name="sunColorPager">#fff</color>
+    <color name="dialog">#FF4081</color>
+    <color name="dialo">#40ffdf</color>
+    <color name="dia_desc">#6e165c</color>
+    <color name="dull_color">#b7b7b7</color>
+
+    <color name="grey">#bfbfbf</color>
+    <color name="white">#fff</color>
+
+    <color name="start_color">#373B44</color>
+    <color name="end_color">#4286f4</color>
+
+</resources>

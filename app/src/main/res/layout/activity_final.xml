@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wave="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/yar_new_freq"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="40dp" />
+
+    <com.scwang.wave.MultiWaveHeader
+        android:id="@+id/waveHeader"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentBottom="true"
+        android:scaleY="-1"
+        wave:mwhIsRunning="false"
+        wave:mwhVelocity="10"
+        wave:mwhProgress="1"
+        wave:mwhGradientAngle="45"
+        wave:mwhWaveHeight="40dp"
+        wave:mwhStartColor="@color/colorPrimaryDark"
+        wave:mwhCloseColor="@color/colorPrimary"
+        />
+
+    <ImageView
+        android:id="@+id/playMack"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:src="@drawable/playmack"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"/>
+
+    <ImageView
+        android:id="@+id/stopMack"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:src="@drawable/stopmack"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:visibility="invisible"/>
+
+    <ProgressBar
+        android:id="@+id/playProgressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="45dp"
+        android:visibility="invisible"
+        android:scrollbarSize="2dp"
+        android:indeterminateTint="#fff"
+        android:progressDrawable="@drawable/progress_drawable"/>
+
+
+</RelativeLayout>
